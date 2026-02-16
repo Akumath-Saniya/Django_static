@@ -1,0 +1,113 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f4fbfc;
+    color:#333;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(0,160,170,0.08);
+    backdrop-filter: blur(12px);
+    border-bottom:1px solid rgba(0,160,170,0.2);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:600;
+    color:#0097a7;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:30px;
+    color:#444;
+    font-weight:500;
+}
+
+nav a.active{
+    color:#0097a7;
+    font-weight:600;
+}
+
+.login-btn{
+    margin-left:30px;
+    padding:8px 20px;
+    border-radius:20px;
+    background:#00acc1;
+    color:white !important;
+    font-weight:600;
+}
+
+.login-btn:hover{
+    background:#00838f;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title{
+    text-align:center;
+    padding:50px 20px 20px;
+}
+
+.page-title h1{
+    color:#0097a7;
+}
+
+/* ===== BOOK GRID ===== */
+.books{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:40px 80px;
+}
+
+.book{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s;
+}
+
+.book:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 24px rgba(0,0,0,0.15);
+}
+
+.book h3{
+    color:#007c91;
+    margin-bottom:8px;
+}
+
+.book button{
+    margin-top:10px;
+    padding:8px 18px;
+    border:none;
+    border-radius:20px;
+    background:#00acc1;
+    color:white;
+    cursor:pointer;
+}
+
+.book button:hover{
+    background:#00838f;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0097a7;
+    color:white;
+    margin-top:40px;
+}

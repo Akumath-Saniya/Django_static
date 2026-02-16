@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/Contact.css' %}">
+<title>Contact - Vj Knowledge Vault</title>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Vj Knowledge Vault</div>
+
+<div class="nav-links">
+<a href="{% url 'Home' %}">Home</a>
+<a href="{% url 'Books' %}">Books</a>
+<a href="{% url 'Cart' %}">Cart</a>
+<a href="#" class="active">Contact</a>
+<a href="#" class="login-btn">Login</a>
+</div>
+</nav>
+
+<section class="page-title">
+<h1>Contact Us</h1>
+<p>We’d love to hear from you</p>
+</section>
+
+<div class="contact-container">
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button class="contact-btn">Send Message</button>
+</form>
+</div>
+
+<footer>
+© 2026 Vj Knowledge Vault
+</footer>
+
+</body>
+</html>

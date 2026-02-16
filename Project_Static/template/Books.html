@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/Books.css' %}">
+<title>Books - Vj Knowledge Vault</title>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Vj Knowledge Vault</div>
+
+<div class="nav-links">
+<a href="{% url 'Home' %}">Home</a>
+<a href="#" class="active">Books</a>
+<a href="{% url 'Cart' %}">Cart</a>
+<a href="{% url 'Contact' %}">Contact</a>
+<a href="#" class="login-btn">Login</a>
+</div>
+</nav>
+
+<section class="page-title">
+<h1>Explore Books</h1>
+<p>Browse our curated knowledge collection</p>
+</section>
+
+<section class="books">
+
+<div class="book">
+<h3>Python Basics</h3>
+<p>Beginner friendly programming guide</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="book">
+<h3>Web Development</h3>
+<p>HTML, CSS & modern frameworks</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="book">
+<h3>Data Science</h3>
+<p>Analytics and machine learning</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="book">
+<h3>AI Fundamentals</h3>
+<p>Introduction to AI concepts</p>
+<button>Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 Vj Knowledge Vault
+</footer>
+
+</body>
+</html>

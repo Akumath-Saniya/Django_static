@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/Home.css' %}">
+<title>Vj Knowledge Vault</title>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Vj Knowledge Vault</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="{% url 'Books' %}">Books</a>
+<a href="{% url 'Cart' %}">Cart</a>
+<a href="{% url 'Contact' %}">Contact</a>
+<a href="#" class="login-btn">Login</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Knowledge That Empowers</h1>
+<p>
+Explore curated resources, research materials, and insights
+designed for smarter learning.
+</p>
+<a href="{% url 'Books' %}" class="btn">Explore Library</a>
+</section>
+
+<section class="section">
+<h2>Why Choose Us</h2>
+
+<div class="features">
+<div class="feature">
+<h3>Premium Resources</h3>
+<p>Carefully organized educational and research materials.</p>
+</div>
+
+<div class="feature">
+<h3>Smart Search</h3>
+<p>Quickly find books, journals, and digital content.</p>
+</div>
+
+<div class="feature">
+<h3>Professional Access</h3>
+<p>Designed for students, professionals, and researchers.</p>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Vj Knowledge Vault
+</footer>
+
+</body>
+</html>

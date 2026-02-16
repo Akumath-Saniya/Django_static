@@ -1,0 +1,149 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f4fbfc;
+    color:#333;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(0,160,170,0.08);
+    backdrop-filter: blur(12px);
+    border-bottom:1px solid rgba(0,160,170,0.2);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:600;
+    color:#0097a7;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:30px;
+    color:#444;
+    font-weight:500;
+    position:relative;
+}
+
+/* underline hover animation */
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#00acc1;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* login button */
+.login-btn{
+    margin-left:30px;
+    padding:8px 20px;
+    border-radius:20px;
+    background:#00acc1;
+    color:white !important;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#00838f;
+    transform:translateY(-2px);
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    padding:100px 60px;
+    background:linear-gradient(135deg,#00acc1,#4dd0e1);
+    color:white;
+}
+
+.hero h1{
+    font-size:44px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.hero button{
+    margin-top:25px;
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#0097a7;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===== CONTENT SECTION ===== */
+.section{
+    padding:70px 60px;
+    text-align:center;
+}
+
+.section h2{
+    color:#0097a7;
+    margin-bottom:20px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-top:40px;
+}
+
+.feature{
+    max-width:260px;
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:translateY(-6px);
+}
+
+.feature h3{
+    color:#007c91;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0097a7;
+    color:white;
+}
+a.btn{
+    padding:10px 20px;
+    background:rgb(22, 153, 165);
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    display:inline-block;
+}
